@@ -113,3 +113,20 @@ h1 {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
 }
+
+.bakgrund {
+    
+    background-color: aqua;
+}
+
+.meny {
+    
+    width: 100%;
+    height: 10%;
+    padding-top: 0;
+    padding-left: 0;
+}
+
+.feed {
+
+}
