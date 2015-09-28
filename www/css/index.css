@@ -54,7 +54,7 @@ h1 {
 
 
 /* Navigation Menu - Background */
-.navigation {
+/*.navigation {
   /* critical sizing and position styles */
     list-style: none;
   background: #111;
@@ -69,7 +69,7 @@ h1 {
   
   /* non-critical appearance styles */
   
-}
+} /*
 
 /* Navigation Menu - List items */
 .nav-item {

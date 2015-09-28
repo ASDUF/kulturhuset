@@ -54,7 +54,7 @@ h1 {
 
 
 /* Navigation Menu - Background */
-.navigation {
+/*.navigation {
   /* critical sizing and position styles */
     list-style: none;
   background: #111;
@@ -69,19 +69,19 @@ h1 {
   
   /* non-critical appearance styles */
   
-}
+} /*
 
 /* Navigation Menu - List items */
-.nav-item {
+/*.nav-item {
   /* non-critical appearance styles */
-  width: 200px;
+  /*width: 200px;
   border-top: 1px solid #111;
   border-bottom: 1px solid #000;
 }
 
 .nav-item a {
   /* non-critical appearance styles */
-  display: block;
+  /*display: block;
   padding: 1em;
   background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
   color: white;
@@ -96,38 +96,38 @@ h1 {
 }
 
 /* Site Wrapper - Everything that isn't navigation */
-.site-wrap {
+/*.site-wrap {
   /* Critical position and size styles */
-  min-height: 100%;
+  /*min-height: 100%;
   min-width: 100%;
   background-color: white; /* Needs a background or else the nav will show through */
-  position: relative;
+  /*position: relative;
   top: 0;
   bottom: 100%;
   left: 0;
   z-index: 1;
   
   /* non-critical apperance styles */
-  padding: 4em;
+  /*padding: 4em;
   background-image: linear-gradient(135deg, rgb(254,255,255) 0%,rgb(221,241,249) 35%,rgb(160,216,239) 100%);
   background-size: 200%;
 }
 
 /* Nav Trigger */
-.nav-trigger {
+/*.nav-trigger {
   /* critical styles - hide the checkbox input */
-  position: absolute;
+  /*position: absolute;
   clip: rect(0, 0, 0, 0);
 }
 
 label[for="nav-trigger"] {
   /* critical positioning styles */
-  position: fixed;
+  /*position: fixed;
   left: 15px; top: 15px;
   z-index: 2;
   
   /* non-critical apperance styles */
-  height: 30px;
+  /*height: 30px;
   width: 30px;
   cursor: pointer;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
@@ -135,7 +135,7 @@ label[for="nav-trigger"] {
 }
 
 /* Make the Magic Happen */
-.nav-trigger + label, .site-wrap {
+/*.nav-trigger + label, .site-wrap {
   transition: left 0.2s;
 }
 
@@ -150,12 +150,12 @@ label[for="nav-trigger"] {
 
 body {
     /* Without this, the body has excess horizontal scroll when the menu is open */
-  overflow-x: hidden;
+  /*overflow-x: hidden;
 }
 
 /* Additional non-critical styles */
 
-h1, h3, p {
+/*h1, h3, p {
   max-width: 600px;
   margin: 0 auto 1em;
 }
@@ -166,5 +166,123 @@ code {
 }
 
 /* Micro reset */
-*,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;}
-html, body { height: 100%; width: 100%; font-family: Helvetica, Arial, sans-serif; }
+/**,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;}
+html, body { height: 100%; width: 100%; font-family: Helvetica, Arial, sans-serif; }*/
+
+
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%; /* For the demo since the page is mostly empty */
+ 
+	background: #333; /* Same color as your menu */
+}
+ 
+#page {
+	position: relative; /* Set the position property so z-index will apply */
+	z-index: 20; /* Make sure this is higher than #menu */
+	padding: 20px;
+ 
+	background: #fff;
+	height: 100%;
+}
+ 
+#page h1 {
+	margin: 0;
+}
+ 
+#toggle-menu {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+ 
+#menu {
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+ 
+	width: 190px;
+	padding: 15px 25px;
+	margin: 0;
+ 
+	list-style: none;
+	background: #333;
+	z-index: 10; /* Make sure the z-index is lower than the #page */
+}
+ 
+#menu a {
+	display: block;
+	color: #fff;
+	padding: 15px 0;
+	border-bottom: 1px solid rgba( 255, 255, 255, 0.05 );
+}
+
+#page {
+ transform: translate3d( -10px, 0, 0 ); /* X, Y, Z */
+ -webkit-transform: translate3d( -10px, 0, 0 );
+}
+
+/* Show the menu when animating or visible */
+.animating #menu, .menu-visible #menu {
+  display: block;
+}
+ 
+/***
+ * If the animating class is present then apply
+ * the CSS transition to #page over 250ms.
+ */
+.animating #page {
+  transition: transform .25s ease-in-out;
+  -webkit-transition: -webkit-transform .25s ease-in-out;
+}
+ 
+/***
+ * If the left class is present then transform
+ * the #page element 240px to the left.
+ */	
+.animating.left #page {
+  transform: translate3d( -240px, 0, 0 );
+  -webkit-transform: translate3d( -240px, 0, 0 );
+}
+ 
+/***
+ * If the right class is present then transform
+ * the #page element 240px to the right.
+ */
+.animating.right #page {
+  transform: translate3d( 240px, 0, 0 );
+  -webkit-transform: translate3d( 240px, 0, 0 );
+}
+ 
+/***
+ * If the menu-visible class is present then
+ * shift the #page 240px from the right edge
+ * via position: absolute to keep it in the 
+ * open position. When .animating, .left and
+ * .right classes are not present the CSS
+ * transform does not apply to #page.
+ */
+.menu-visible #page {
+  right: 240px;
+}
+
+#page, #menu {
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+}
+
+/* Hide the #toggle-menu element on larger screens */
+#toggle-menu {
+  display: none;
+}
+ 
+@media only screen and (max-width: 768px) {
+  #toggle-menu {
+    display: block;
+  } 
+  
+  /* Place all the CSS for your mobile #menu here */
+}
