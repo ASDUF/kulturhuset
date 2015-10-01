@@ -54,7 +54,7 @@ h1 {
 
 
 /* Navigation Menu - Background */
-/*.navigation {
+.navigation {
   /* critical sizing and position styles */
     list-style: none;
   background: #111;
