@@ -10,6 +10,9 @@
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>KulturhusAppen</title>
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/index.js"></script>
+        
     </head>
     
     <body>
@@ -19,10 +22,10 @@
         
         
         <ul class="navigation">
-                    <li class="nav-item"><a href="#">Evenemang</a></li>
-                    <li class="nav-item"><a href="#">Bio</a></li>
-                    <li class="nav-item"><a href="#">Bowling</a></li>
-                    <li class="nav-item"><a href="#">Kontakta oss</a></li>
+                    <li class="nav-item"><a href="#" onclick="switcher('#Evenemang');">Evenemang</a></li>
+                    <li class="nav-item"><a href="#" onclick="switcher('#Bio');">Bio</a></li>
+                    <li class="nav-item"><a href="#" onclick="switcher('#Bowling');">Bowling</a></li>
+                    <li class="nav-item"><a href="#" onclick="switcher('#Kontakt');">Kontakta oss</a></li>
                 </ul>
 
                     <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -31,7 +34,7 @@
         <div class="site-wrap">
     
           
-            <div id="evangemang">
+            <div id="Evenemang">
 
 
                 <h1>KulturHuset</h1>
@@ -68,7 +71,7 @@
             
             
             
-            <div id="bowling">
+            <div id="Bowling">
 
 
                 <h1>KulturHuset</h1>
