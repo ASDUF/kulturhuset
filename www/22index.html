@@ -1,4 +1,97 @@
 <!DOCTYPE html>
+<html>
+   <head>
+
+      <title>jQuery.mmenu playground</title>
+      <meta charset="utf-8" />
+      <link type="text/css" href="layout.css" rel="stylesheet" />
+
+      
+      <link type="text/css" href="css/jquery.mmenu.all.css" rel="stylesheet" />
+
+  
+      <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/jquery.mmenu.min.all.js"></script>
+
+      <!-- Fire the plugin onDocumentReady -->
+      <script type="text/javascript">
+         jQuery(document).ready(function( $ ) {
+            $("#menu").mmenu({
+               "slidingSubmenus": false,
+               "extensions": [
+                  "effect-menu-slide",
+                  "pageshadow",
+                  "theme-white"
+               ],
+               "navbar": {
+                  "title": "Kulturhuset"
+               },
+               "navbars": [
+                  {
+                     "position": "top"
+                  }
+               ]
+            });
+         });
+      </script>
+
+   </head>
+   <body>
+
+      <!-- The page -->
+      <div class="page">
+         <div class="header">
+            <a href="#menu"></a>
+            Demo
+         </div>
+         <div class="content">
+            <p><strong>This is a demo.</strong><br />
+               Click the menu icon to open the menu.</p>
+         </div>
+      </div>
+
+      <!-- The menu -->
+      <nav id="menu">
+         <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About us</a>
+               <ul>
+                  <li><a href="/about/history">History</a></li>
+                  <li><a href="/about/team">The team</a></li>
+                  <li><a href="/about/address">Our address</a></li>
+               </ul>
+            </li>
+            <li><a href="/contact">Contact</a></li>
+         </ul>
+      </nav>
+
+   </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
 
 <html>
     
@@ -6,8 +99,8 @@
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="msapplication-tap-highlight" content="no" />
-        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=300" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>KulturhusAppen</title>
         <script src="js/jquery-2.1.1.min.js"></script>
@@ -39,14 +132,27 @@
 
                 <h1>KulturHuset</h1>
 
-            <h2>Evaegaegj</h2>
+            <h2>BIO FÖR DAGLEDIGA 6 OKTOBER - JAG ÄR INGRID</h2>
 
+            <p>Jag är Ingrid (Sv. txt) visas kl 14.00 -  tisdag 6/10. Sjufaldigt Oscarsnominerade och trefaldigt Oscarsbelönade Ingrid Bergman var en av Hollywoods gulderas starkast lysande stjärnor, med sto [ ... ]</p>
+                
+                
+                <h2>MUSIKCAFÉ TORSDAG 8 OKTOBER- PER TENGSTRAND</h2>
 
+            <p>Per Tengstrand Klassiska pärlor och berättelser Upplev den kritikerrosade världspianisten Per Tengstrand i ett program där han framför allt bjuder på musik av geniet Beethoven Upplev den kr [ ... ]</p>
+                
+                
+                <h2>KULTURFESTIVAL - JUBILEUMSFEST 29 OKTOBER</h2>
 
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi vero nisi eos sed qui natus, ut eius reprehenderit error nesciunt veniam aliquam nulla itaque labore obcaecati molestiae eveniet, perferendis provident amet perspiciatis expedita accusantium! Eveniet, quos voluptas et, labore natus, saepe unde est nulla sit eaque tempore debitis accusantium. Recusandae.</p>
-              <p>Dolorem aliquam a libero reiciendis obcaecati doloribus ipsa eos laudantium, dicta in! Odit iure ut ratione, dolorum cupiditate perferendis voluptatum sapiente, dignissimos sunt necessitatibus, reprehenderit consequatur dolorem. Aliquam veniam quaerat, pariatur deserunt reiciendis vero vitae, repellat omnis sequi dolor nesciunt. Nihil similique alias impedit, obcaecati eligendi delectus voluptatum! Ipsum, vel.</p>
-              <p>Sint, perspiciatis nemo aut, rerum excepturi deleniti modi quos nihil corporis eum, maiores soluta labore, consectetur eligendi nesciunt. Placeat, incidunt! Illum placeat eligendi, veritatis consectetur eum! Dolor obcaecati minima ab placeat voluptatem neque modi doloribus, magnam qui voluptate eaque in. Nulla expedita hic porro architecto facere officiis vitae numquam, dolor!</p>
-              <p>Perferendis quis ea incidunt ducimus nisi voluptate natus. Repellat asperiores quod rerum rem quos blanditiis enim modi, veniam voluptas a facilis! Velit cum omnis, voluptatum eum inventore! Corrupti, suscipit, neque distinctio expedita est laboriosam cum aliquid minus tempora quaerat officia possimus unde vel deleniti eaque fugit accusamus iusto dolorum natus.</p>
+            <p> Jubileumsfest i Kulturhuset 29.10 från kl 15.30 Jubileum i Kulturhuset 16.00 Eftermiddagskaffe med Franz Schuberts ”Die schöne Müllerin” tillsammans med Pär Nilsén baryton och Kerstin J [ ... ]</p>
+                
+                
+                <h2>TANNHÄUSER - 31 OKTOBER</h2>
+
+            <p>Folkets Hus och Parker livesänder Wagners Tannhäuser med svenske Peter Mattei i en av rollerna. 31 oktober 17.00 visas den direkt från Metropolitan i New York på våra biografer runt om i Sverig [ ... ]</p>
+            
+            
+            
             </div>
             
             
@@ -78,12 +184,25 @@
 
             <h2>Bowling</h2>
 
+           <p>  Bowling är en perfekt fritidssyssla som passar alla 
+               - från de allra yngsta till de allra äldsta.</br>
 
+            Hitta på något med företaget, kompisgänget eller familjen och upptäck att bowling är en idealisk aktivitet då man vill göra någonting kul tillsammans.</br>
 
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi vero nisi eos sed qui natus, ut eius reprehenderit error nesciunt veniam aliquam nulla itaque labore obcaecati molestiae eveniet, perferendis provident amet perspiciatis expedita accusantium! Eveniet, quos voluptas et, labore natus, saepe unde est nulla sit eaque tempore debitis accusantium. Recusandae.</p>
-              <p>Dolorem aliquam a libero reiciendis obcaecati doloribus ipsa eos laudantium, dicta in! Odit iure ut ratione, dolorum cupiditate perferendis voluptatum sapiente, dignissimos sunt necessitatibus, reprehenderit consequatur dolorem. Aliquam veniam quaerat, pariatur deserunt reiciendis vero vitae, repellat omnis sequi dolor nesciunt. Nihil similique alias impedit, obcaecati eligendi delectus voluptatum! Ipsum, vel.</p>
-              <p>Sint, perspiciatis nemo aut, rerum excepturi deleniti modi quos nihil corporis eum, maiores soluta labore, consectetur eligendi nesciunt. Placeat, incidunt! Illum placeat eligendi, veritatis consectetur eum! Dolor obcaecati minima ab placeat voluptatem neque modi doloribus, magnam qui voluptate eaque in. Nulla expedita hic porro architecto facere officiis vitae numquam, dolor!</p>
-              <p>Perferendis quis ea incidunt ducimus nisi voluptate natus. Repellat asperiores quod rerum rem quos blanditiis enim modi, veniam voluptas a facilis! Velit cum omnis, voluptatum eum inventore! Corrupti, suscipit, neque distinctio expedita est laboriosam cum aliquid minus tempora quaerat officia possimus unde vel deleniti eaque fugit accusamus iusto dolorum natus.</p>
+Öppettider, pris per bana & tim:</br>
+Måndag    15.00 - 17.00     150:-</br>
+Tisdag      Stängt</br>
+Onsdag     Stängt</br>
+Torsdag    18.00 - 21.00     200:-</br>
+Fredag      15.00 - 17.00     150:- 17.00 - 21.00 200:-</br>
+Lördag      13.00 - 21.00     200:-</br>
+Söndag     Stängt</br>
+
+Övriga tider för större sällskap går det bra att boka enligt överenskommelse.</br>
+Ring och boka på 0382 - 124 75
+Vi finns på nedreplan i Kulturhuset, ingång på baksidan.  </p>
+
+             
             </div>
             
             
@@ -127,4 +246,4 @@
         
     
     </body>
-</html>
+</html> -->
