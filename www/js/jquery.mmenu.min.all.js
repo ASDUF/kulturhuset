@@ -134,7 +134,11 @@ function(n){var a="mmenu",t="navbars",e="title";n[a].addons[t][e]=function(e,r){
 
 
 
-
+$( document ).ready(function() {    
+  
+   switcher("#Evenemang");
+    
+});
 
 
 function switcher(sida){
@@ -153,8 +157,3 @@ function switcher(sida){
 
 
 
-$( document ).ready(function() {    
-  
-    switcher("#Evenemang");
-    
-});
