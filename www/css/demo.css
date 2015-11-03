@@ -9,7 +9,7 @@ body
 	font-family: Arial, Helvetica, Verdana;
 	font-size: 14px;
 	line-height: 22px;
-	color: #E51214;
+	color: #777;
 	position: relative;
 	-webkit-text-size-adjust: none;
 }
@@ -58,7 +58,7 @@ text-align: left;
 .header,
 .footer
 {
-	background: #777;
+	background: #E51214;
 	font-size: 16px;
 	font-weight: bold;
 	color: #fff;
