@@ -49,8 +49,12 @@ nav:not(.mm-menu)
 
 .content
 {
+<<<<<<< Updated upstream
 text-align: left;
     
+=======
+text-align: center;
+>>>>>>> Stashed changes
 }
 .header,
 .footer
