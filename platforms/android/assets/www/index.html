@@ -25,47 +25,147 @@
                   "theme-white"
                ],
                "navbar": {
-                  "title": "Kulturhuset"
+                  "title": "Meny"
                },
                "navbars": [
                   {
                      "position": "top"
                   }
                ]
+            
+            });         
+    
+             
+             
+              $.get("http://kulturhusetapp.webresult.se/bio/", function(data){
+    
+    
+         $("#Bio").html(data);
+    
             });
+             
+             
+               $.get("http://kulturhusetapp.webresult.se/bowling/", function(data){
+    
+    
+         $("#Bowling").html(data);
+    
+            });
+             
+             
+               $.get("http://kulturhusetapp.webresult.se/evenemang/", function(data){
+    
+    
+         $("#Evenemang").html(data);
+    
+            });
+             
+             
+             
+               $.get("http://kulturhusetapp.webresult.se/kontakt/", function(data){
+    
+    
+         $("#Kontakt").html(data);
+    
+            });
+   
+             
+             
+             
          });</script>
         
 	</head>
 	<body>
-		<div id="page">
-			<div class="header">
+		
+        <div id="page">
+			
+            <div class="header">
 				<a href="#menu"></a>
-				Demo
+				Kulturhuset
 			</div>
-			<div class="content">
-				<p><strong>This is a demo.</strong><br />
-					Click the menu icon to open the menu.</p>
-				<p>For more demos, a tutorial, documentation and support, please visit <a href="http://mmenu.frebsite.nl" target="_blank">mmenu.frebsite.nl</a></p>			
-			</div>
-			<nav id="menu">
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#about">About us</a>
-						<ul>
-							<li><a href="#about/history">History</a></li>
-							<li><a href="#about/team">The team</a>
-								<ul>
-									<li><a href="#about/team/management">Management</a></li>
-									<li><a href="#about/team/sales">Sales</a></li>
-									<li><a href="#about/team/development">Development</a></li>
-								</ul>
-							</li>
-							<li><a href="#about/address">Our address</a></li>
-						</ul>
-					</li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</nav>
-		</div>
+                <div class="content">
+                    
+                    
+                    
+                    
+           
+                     <div id="Bio">
+                
+                <h2>Bio</h2>
+
+                        <p>    </p>
+           
+            </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <div id="Evenemang">
+
+                <h2>Evenemang</h2>
+
+
+                         <p>      </p>
+                        
+                        
+             
+            </div>
+            
+            
+        
+            
+            
+            
+            
+            
+            <div id="Bowling">
+
+                <h2>Bowling</h2>
+
+
+
+                          <p>     </p>
+
+            </div>
+            
+            
+            
+            
+            
+            <div id="Kontakt">
+
+                 <h2>Kontakt</h2>
+
+
+                         <p>    </p>
+         
+            </div>
+
+       
+        
+         </div>
+               
+            
+                 
+        
+        
+     </div>
+                 
+        
+        
+        
+                    <nav id="menu">
+                        <ul>
+                            <li><a href="#Evenemang" onclick="switcher('#Evenemang');">Evenemang</a></li>
+                            <li><a href="#Bio" onclick="switcher('#Bio');">Bio</a></li>
+                            <li><a href="#Bowling" onclick="switcher('#Bowling');">Bowling</a></li>
+                            <li><a href="#Kontakt" onclick="switcher('#Kontakt');">Kontakta oss</a>
+                               
+                        </ul>
+                     </nav>
+		
+        </div>
 	</body>
 </html>

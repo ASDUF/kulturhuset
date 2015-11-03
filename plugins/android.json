@@ -6,6 +6,10 @@
     "config_munge": {
         "files": {}
     },
-    "installed_plugins": {},
+    "installed_plugins": {
+        "cordova-plugin-transport-security": {
+            "PACKAGE_NAME": "com.ASDUF.kulturhuset"
+        }
+    },
     "dependent_plugins": {}
 }

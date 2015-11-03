@@ -35,13 +35,40 @@
             
             });         
     
+             
+             
+              $.get("http://kulturhusetapp.webresult.se/bio/", function(data){
     
-    $.get("https://google.com", function(data){
+    
+         $("#Bio").html(data);
+    
+            });
+             
+             
+               $.get("http://kulturhusetapp.webresult.se/bowling/", function(data){
+    
+    
+         $("#Bowling").html(data);
+    
+            });
+             
+             
+               $.get("http://kulturhusetapp.webresult.se/evenemang/", function(data){
     
     
          $("#Evenemang").html(data);
     
-    });
+            });
+             
+             
+             
+               $.get("http://kulturhusetapp.webresult.se/kontakt/", function(data){
+    
+    
+         $("#Kontakt").html(data);
+    
+            });
+   
              
              
              
