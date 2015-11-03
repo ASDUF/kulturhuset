@@ -1,5 +1,9 @@
 #Last build type
+<<<<<<< Updated upstream
 #Mon, 02 Nov 2015 09:12:54 +0100
+=======
+#Wed, 21 Oct 2015 09:44:04 +0200
+>>>>>>> Stashed changes
 
 build.last.target=debug
 
