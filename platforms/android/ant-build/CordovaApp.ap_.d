@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 /Users/Robbanz/documents/3an/Gymnasiearbete/Appen/kulturhuset/platforms/android/ant-build/CordovaApp.ap_ \
  : /Users/Robbanz/documents/3an/Gymnasiearbete/Appen/kulturhuset/platforms/android/res/drawable/icon.png \
 /Users/Robbanz/documents/3an/Gymnasiearbete/Appen/kulturhuset/platforms/android/res/drawable-hdpi/icon.png \
@@ -43,48 +42,3 @@
 /Users/Robbanz/documents/3an/Gymnasiearbete/Appen/kulturhuset/platforms/android/assets/www/js/jquery-2.1.1.min.js \
 /Users/Robbanz/documents/3an/Gymnasiearbete/Appen/kulturhuset/platforms/android/assets/www/js/jquery.mmenu.min.all.js \
 /Users/Robbanz/documents/3an/Gymnasiearbete/Appen/kulturhuset/platforms/android/ant-build/AndroidManifest.xml \
-=======
-/Users/ProHazz/desktop/Gymnasiearbete/appen/kulturhuset/kulturhuset/platforms/android/ant-build/CordovaApp.ap_ \
- : /Users/ProHazz/desktop/Gymnasiearbete/appen/kulturhuset/kulturhuset/platforms/android/res/drawable/icon.png \
-/Users/ProHazz/desktop/Gymnasiearbete/appen/kulturhuset/kulturhuset/platforms/android/res/drawable-hdpi/icon.png \
-/Users/ProHazz/desktop/Gymnasiearbete/appen/kulturhuset/kulturhuset/platforms/android/res/drawable-land-hdpi/screen.png \
-/Users/ProHazz/desktop/Gymnasiearbete/appen/kulturhuset/kulturhuset/platforms/android/res/drawable-land-ldpi/screen.png \
-/Users/ProHazz/desktop/Gymnasiearbete/appen/kulturhuset/kulturhuset/platforms/android/res/drawable-land-mdpi/screen.png \
-/Users/ProHazz/desktop/Gymnasiearbete/appen/kulturhuset/kulturhuset/platforms/android/res/drawable-land-xhdpi/screen.png \
-/Users/ProHazz/desktop/Gymnasiearbete/appen/kulturhuset/kulturhuset/platforms/android/res/drawable-ldpi/icon.png \
-/Users/ProHazz/desktop/Gymnasiearbete/appen/kulturhuset/kulturhuset/platforms/android/res/drawable-mdpi/icon.png \
-/Users/ProHazz/desktop/Gymnasiearbete/appen/kulturhuset/kulturhuset/platforms/android/res/drawable-port-hdpi/screen.png \
-/Users/ProHazz/desktop/Gymnasiearbete/appen/kulturhuset/kulturhuset/platforms/android/res/drawable-port-ldpi/screen.png \
-/Users/ProHazz/desktop/Gymnasiearbete/appen/kulturhuset/kulturhuset/platforms/android/res/drawable-port-mdpi/screen.png \
-/Users/ProHazz/desktop/Gymnasiearbete/appen/kulturhuset/kulturhuset/platforms/android/res/drawable-port-xhdpi/screen.png \
-/Users/ProHazz/desktop/Gymnasiearbete/appen/kulturhuset/kulturhuset/platforms/android/res/drawable-xhdpi/icon.png \
-/Users/ProHazz/desktop/Gymnasiearbete/appen/kulturhuset/kulturhuset/platforms/android/res/values/strings.xml \
-/Users/ProHazz/desktop/Gymnasiearbete/appen/kulturhuset/kulturhuset/platforms/android/res/xml/config.xml \
-/Users/ProHazz/desktop/Gymnasiearbete/appen/kulturhuset/kulturhuset/platforms/android/ant-build/res/drawable/icon.png \
-/Users/ProHazz/desktop/Gymnasiearbete/appen/kulturhuset/kulturhuset/platforms/android/ant-build/res/drawable-hdpi/icon.png \
-/Users/ProHazz/desktop/Gymnasiearbete/appen/kulturhuset/kulturhuset/platforms/android/ant-build/res/drawable-land-hdpi/screen.png \
-/Users/ProHazz/desktop/Gymnasiearbete/appen/kulturhuset/kulturhuset/platforms/android/ant-build/res/drawable-land-ldpi/screen.png \
-/Users/ProHazz/desktop/Gymnasiearbete/appen/kulturhuset/kulturhuset/platforms/android/ant-build/res/drawable-land-mdpi/screen.png \
-/Users/ProHazz/desktop/Gymnasiearbete/appen/kulturhuset/kulturhuset/platforms/android/ant-build/res/drawable-land-xhdpi/screen.png \
-/Users/ProHazz/desktop/Gymnasiearbete/appen/kulturhuset/kulturhuset/platforms/android/ant-build/res/drawable-ldpi/icon.png \
-/Users/ProHazz/desktop/Gymnasiearbete/appen/kulturhuset/kulturhuset/platforms/android/ant-build/res/drawable-mdpi/icon.png \
-/Users/ProHazz/desktop/Gymnasiearbete/appen/kulturhuset/kulturhuset/platforms/android/ant-build/res/drawable-port-hdpi/screen.png \
-/Users/ProHazz/desktop/Gymnasiearbete/appen/kulturhuset/kulturhuset/platforms/android/ant-build/res/drawable-port-ldpi/screen.png \
-/Users/ProHazz/desktop/Gymnasiearbete/appen/kulturhuset/kulturhuset/platforms/android/ant-build/res/drawable-port-mdpi/screen.png \
-/Users/ProHazz/desktop/Gymnasiearbete/appen/kulturhuset/kulturhuset/platforms/android/ant-build/res/drawable-port-xhdpi/screen.png \
-/Users/ProHazz/desktop/Gymnasiearbete/appen/kulturhuset/kulturhuset/platforms/android/ant-build/res/drawable-xhdpi/icon.png \
-/Users/ProHazz/desktop/Gymnasiearbete/appen/kulturhuset/kulturhuset/platforms/android/assets/_where-is-www.txt \
-/Users/ProHazz/desktop/Gymnasiearbete/appen/kulturhuset/kulturhuset/platforms/android/assets/www \
-/Users/ProHazz/desktop/Gymnasiearbete/appen/kulturhuset/kulturhuset/platforms/android/assets/www/cordova.js \
-/Users/ProHazz/desktop/Gymnasiearbete/appen/kulturhuset/kulturhuset/platforms/android/assets/www/cordova_plugins.js \
-/Users/ProHazz/desktop/Gymnasiearbete/appen/kulturhuset/kulturhuset/platforms/android/assets/www/css \
-/Users/ProHazz/desktop/Gymnasiearbete/appen/kulturhuset/kulturhuset/platforms/android/assets/www/img \
-/Users/ProHazz/desktop/Gymnasiearbete/appen/kulturhuset/kulturhuset/platforms/android/assets/www/index.html \
-/Users/ProHazz/desktop/Gymnasiearbete/appen/kulturhuset/kulturhuset/platforms/android/assets/www/js \
-/Users/ProHazz/desktop/Gymnasiearbete/appen/kulturhuset/kulturhuset/platforms/android/assets/www/css/demo.css \
-/Users/ProHazz/desktop/Gymnasiearbete/appen/kulturhuset/kulturhuset/platforms/android/assets/www/css/jquery.mmenu.all.css \
-/Users/ProHazz/desktop/Gymnasiearbete/appen/kulturhuset/kulturhuset/platforms/android/assets/www/img/logo.png \
-/Users/ProHazz/desktop/Gymnasiearbete/appen/kulturhuset/kulturhuset/platforms/android/assets/www/js/jquery-2.1.1.min.js \
-/Users/ProHazz/desktop/Gymnasiearbete/appen/kulturhuset/kulturhuset/platforms/android/assets/www/js/jquery.mmenu.min.all.js \
-/Users/ProHazz/desktop/Gymnasiearbete/appen/kulturhuset/kulturhuset/platforms/android/ant-build/AndroidManifest.xml \
->>>>>>> Stashed changes
