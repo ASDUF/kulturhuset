@@ -38,6 +38,7 @@
 /Users/Robbanz/documents/3an/Gymnasiearbete/Appen/kulturhuset/platforms/android/assets/www/plugins \
 /Users/Robbanz/documents/3an/Gymnasiearbete/Appen/kulturhuset/platforms/android/assets/www/css/demo.css \
 /Users/Robbanz/documents/3an/Gymnasiearbete/Appen/kulturhuset/platforms/android/assets/www/css/jquery.mmenu.all.css \
+/Users/Robbanz/documents/3an/Gymnasiearbete/Appen/kulturhuset/platforms/android/assets/www/img/kulturhusloga.png \
 /Users/Robbanz/documents/3an/Gymnasiearbete/Appen/kulturhuset/platforms/android/assets/www/img/logo.png \
 /Users/Robbanz/documents/3an/Gymnasiearbete/Appen/kulturhuset/platforms/android/assets/www/js/jquery-2.1.1.min.js \
 /Users/Robbanz/documents/3an/Gymnasiearbete/Appen/kulturhuset/platforms/android/assets/www/js/jquery.mmenu.min.all.js \
