@@ -9,7 +9,7 @@ body
 	font-family: Arial, Helvetica, Verdana;
 	font-size: 14px;
 	line-height: 22px;
-	color: #666;
+	color: #777;
 	position: relative;
 	-webkit-text-size-adjust: none;
 }
@@ -38,16 +38,28 @@ p
 a, a:link, a:active, a:visited, a:hover
 {
 	color: inherit;
-	text-decoration: underline;
+	text-decoration: none;
+    font-size:20px;
+    
+    
+    
+    
 }
 
 nav:not(.mm-menu)
 {
 	display: none;
+    
 }
 
+.content
+{
+
+text-align: left;
+color:black;
+    
+}
 .header,
-.content,
 .footer
 {
 	text-align: center;
@@ -55,7 +67,7 @@ nav:not(.mm-menu)
 .header,
 .footer
 {
-	background: #777;
+	background: #E51214;
 	font-size: 16px;
 	font-weight: bold;
 	color: #fff;
@@ -94,5 +106,9 @@ nav:not(.mm-menu)
 }
 .content
 {
-	padding: 150px 50px 50px 50px;
+	padding: 0px 50px 50px 10px;
+}
+
+img {
+    max-width: 100%;
 }

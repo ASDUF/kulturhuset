@@ -20,6 +20,9 @@
     "installed_plugins": {
         "cordova-plugin-transport-security": {
             "PACKAGE_NAME": "com.ASDUF.kulturhuset"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.ASDUF.kulturhuset"
         }
     },
     "dependent_plugins": {}

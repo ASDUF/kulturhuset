@@ -54,13 +54,10 @@ nav:not(.mm-menu)
 
 .content
 {
-<<<<<<< Updated upstream
+
 text-align: left;
-    color:black;
+color:black;
     
-=======
-text-align: center;
->>>>>>> Stashed changes
 }
 .header,
 .footer
