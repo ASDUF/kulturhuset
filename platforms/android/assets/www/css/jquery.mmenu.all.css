@@ -61,7 +61,7 @@
   border-color: inherit; }
 
 .mm-panels > .mm-panel {
-  background: inherit;
+  background: grey;
   border-color: inherit;
   -webkit-overflow-scrolling: touch;
   overflow: scroll;
@@ -178,7 +178,8 @@ li.mm-vertical.mm-opened > .mm-panel {
       text-overflow: ellipsis;
       white-space: nowrap;
       overflow: hidden;
-      color: inherit;
+        background: grey;
+      color: black;
       display: block;
       padding: 18px 10px 18px 20px;
       margin: 0; }
@@ -285,7 +286,7 @@ li.mm-vertical.mm-opened > .mm-panel {
   right: 23px; }
 
 .mm-menu {
-  background: #f3f3f3;
+  background: grey;
   border-color: rgba(0, 0, 0, 0.1);
   color: rgba(0, 0, 0, 0.7); }
   .mm-menu .mm-navbar > *,
@@ -544,7 +545,7 @@ html.mm-opened.mm-dragging .mm-slideout {
 	jQuery.mmenu navbars addon CSS
 */
 .mm-menu > .mm-navbar {
-  background: inherit;
+  background: grey;                                     /*här färg*/
   padding: 0;
   z-index: 3;
   -webkit-transform: translate3d(0, 0, 0);
