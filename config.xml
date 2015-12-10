@@ -11,4 +11,5 @@
     <access origin="*" />
     <plugin name="cordova-plugin-transport-security" spec="~0.1.1" />
     <plugin name="cordova-plugin-whitelist" spec="~1.0.0" />
+    <preference name="orientation" value="portrait" />
 </widget>
