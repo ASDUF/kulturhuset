@@ -134,9 +134,68 @@ function(n){var a="mmenu",t="navbars",e="title";n[a].addons[t][e]=function(e,r){
 
 
 
+
+
+document.addEventListener('deviceready', onDeviceReady, false);
+
+onDeviceReady = function(){
+    
+    var push = PushNotification.init({
+        "android": {
+            "senderID": "1234567890"
+            
+        },
+        "ios": {"alert": "true", "badge": "false", "sound": "true"}
+    });
+    
+    push.on('registration', function(data) {
+        
+        url = 'http://pushserver.linusanderas.se/reg.php?appId=1&platform=' +
+            device.platform + '&regId=' + data.registrationId;
+        
+        
+        alert(url);
+        
+        $.get(url, function(data){});
+        
+    });
+    
+}
+
+
+
 $( document ).ready(function() {    
   
    switcher("#Evenemang");
+    
+    
+    
+    url = 'http://www.aftonbladet.se/nyheter/rss.xml';
+    
+    $("content").html(localStorage.getItem("rss_nyheter"));
+    
+        $.get(url, function(data){
+            
+            var retval = "";
+            
+            $(data).find('item').each(function(){
+            
+                    var title = $(this).find("title").text();
+                    var pubDate = $(this).find("pubDate").text();
+                    var description = $(this).find("description").text();
+
+                    retval = retval + '<b>' + title + '</b><br />'
+                    retval = retval + '<i>' + pubDate + '</i><br />';
+                    retval = retval + description + '<hr />';
+            });
+            
+                if (retval != "")
+                {
+                    localStorage.setItem("rss_nyheter", retval);
+                    $("#Evenemang").html(retval);
+                }
+        });
+    
     
     
 });
@@ -153,6 +212,9 @@ function switcher(sida){
     
     
 }
+
+
+
 
 
 
