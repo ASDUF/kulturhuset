@@ -136,17 +136,19 @@ function(n){var a="mmenu",t="navbars",e="title";n[a].addons[t][e]=function(e,r){
 
 
 
-document.addEventListener('deviceready', onDeviceReady, false);
+
 
 onDeviceReady = function(){
     
     var push = PushNotification.init({
         "android": {
-            "senderID": "1234567890"
+            "senderID": "219096860116"
             
         },
         "ios": {"alert": "true", "badge": "false", "sound": "true"}
     });
+    
+  //  alert(push);
     
     push.on('registration', function(data) {
         
@@ -154,15 +156,15 @@ onDeviceReady = function(){
             device.platform + '&regId=' + data.registrationId;
         
         
-        alert(url);
+//        alert(url);
         
         $.get(url, function(data){});
         
     });
     
-}
+};
 
-
+document.addEventListener('deviceready', onDeviceReady, false);
 
 $( document ).ready(function() {    
   
@@ -170,9 +172,9 @@ $( document ).ready(function() {
     
     
     
-    url = 'http://www.aftonbladet.se/nyheter/rss.xml';
+    url = 'http://www.kulturhuset.com/ny2016/index.php/evenemang/feed/rss/evenemang?format=feed';
     
-    $("content").html(localStorage.getItem("rss_nyheter"));
+    $("#Evenemang").html(localStorage.getItem("rss_evenemang"));
     
         $.get(url, function(data){
             
@@ -191,10 +193,41 @@ $( document ).ready(function() {
             
                 if (retval != "")
                 {
-                    localStorage.setItem("rss_nyheter", retval);
+                    localStorage.setItem("rss_evenemang", retval);
                     $("#Evenemang").html(retval);
                 }
         });
+    
+    
+    
+    
+     url = 'http://www.kulturhuset.com/ny2016/index.php/bio/feed/rss/bio?format=feed';
+    
+    $("#Bio").html(localStorage.getItem("rss_bio"));
+    
+        $.get(url, function(data){
+            
+            var retval = "";
+            
+            $(data).find('item').each(function(){
+            
+                    var title = $(this).find("title").text();
+                    var pubDate = $(this).find("pubDate").text();
+                    var description = $(this).find("description").text();
+
+                    retval = retval + '<b>' + title + '</b><br />'
+                    retval = retval + '<i>' + pubDate + '</i><br />';
+                    retval = retval + description + '<hr />';
+            });
+            
+                if (retval != "")
+                {
+                    localStorage.setItem("rss_bio", retval);
+                    $("#Bio").html(retval);
+                }
+        });
+    
+    
     
     
     
