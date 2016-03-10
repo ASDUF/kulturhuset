@@ -61,7 +61,8 @@
   border-color: inherit; }
 
 .mm-panels > .mm-panel {
-  background: #E8DAB3;                                          /*här färg*/
+  background: #E8DAB3;                            /*här färg*/
+    /*background: #2a2a2a;*/
   border-color: inherit;
   -webkit-overflow-scrolling: touch;
   overflow: scroll;
@@ -179,7 +180,7 @@ li.mm-vertical.mm-opened > .mm-panel {
       white-space: nowrap;
       overflow: hidden;
         background: #E8DAB3;                                            /*här färg*/
-      color: black;
+      color: #171618;
       display: block;
       padding: 18px 10px 18px 20px;
       margin: 0; }
