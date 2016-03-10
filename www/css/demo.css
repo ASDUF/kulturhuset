@@ -178,8 +178,13 @@ color:black;
 .header,
 .footer
 {
+<<<<<<< HEAD
 	background: #F0E8C4;                   /*här färg*/
    /* background: #171618;*/
+=======
+	background: #999999;                   /*här färg*/
+    /* border-bottom: thin solid black; */
+>>>>>>> origin/master
 	font-size: 16px;
 	font-weight: bold;
 	color: #fff;
