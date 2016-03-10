@@ -245,9 +245,3 @@ function switcher(sida){
     
     
 }
-
-
-
-
-
-
