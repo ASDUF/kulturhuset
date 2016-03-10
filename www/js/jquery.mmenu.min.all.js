@@ -183,11 +183,11 @@ $( document ).ready(function() {
             $(data).find('item').each(function(){
             
                     var title = $(this).find("title").text();
-                    var pubDate = $(this).find("pubDate").text();
+                    /*var pubDate = $(this).find("pubDate").text();*/
                     var description = $(this).find("description").text();
 
                     retval = retval + '<b>' + title + '</b><br />'
-                    retval = retval + '<i>' + pubDate + '</i><br />';
+                   /* retval = retval + '<i>' + pubDate + '</i><br />'; */
                     retval = retval + description + '<hr />';
             });
             
@@ -212,11 +212,11 @@ $( document ).ready(function() {
             $(data).find('item').each(function(){
             
                     var title = $(this).find("title").text();
-                    var pubDate = $(this).find("pubDate").text();
+                    /*var pubDate = $(this).find("pubDate").text(); */
                     var description = $(this).find("description").text();
 
                     retval = retval + '<b>' + title + '</b><br />'
-                    retval = retval + '<i>' + pubDate + '</i><br />';
+                   /* retval = retval + '<i>' + pubDate + '</i><br />'; */
                     retval = retval + description + '<hr />';
             });
             

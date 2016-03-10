@@ -1,8 +1,103 @@
+.box {
+    margin-left: 25%;
+
+
+}
+
+.kontaktloggor
+{
+margin-top:-50px;
+float:left;
+
+
+}
+
+.kontakttitel
+{
+font-size:25px;
+margin-left:25%;
+margin-top:2px;
+    
+}
+
+
+
 
 .kontakttext
 {
-    font-size:19px;
+    font-size:16px;
+    margin-left:25%;
+    margin-top:2px;
 }
+
+
+
+
+
+
+
+
+.kontakttitel2
+{
+font-size:25px;
+margin-left:25%;
+margin-top:2px;
+}
+
+.kontaktloggor2
+{
+margin-top:-50px;
+float:left;
+
+}
+
+
+.kontakttext2
+{
+    font-size:16px;
+    margin-left:25%;
+    margin-top:2px;
+}
+
+
+
+
+
+
+
+
+.kontakttitel3
+{
+font-size:25px;
+margin-left:25%;
+margin-top:2px;
+}
+
+.kontaktloggor3
+{
+margin-top:-50px;
+float:left;
+
+}
+
+
+.kontakttext3
+{
+    font-size:16px;
+    margin-left:25%;
+    margin-top:2px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .bowlingnummer
 {
@@ -30,13 +125,13 @@ body
 {
 	text-shadow: none;
 }
-h1, h2, h3, h4, h5, h6
+h1, h2,  h4, h5, h6
 {
 	line-height: 1;
 	font-weight: bold;
 	margin: 0px 0 10px 0;
 }
-h1, h2, h3
+h1, h2, 
 {
 	font-size: 18px;
 }
@@ -83,13 +178,19 @@ color:black;
 .header,
 .footer
 {
+<<<<<<< HEAD
+	background: #F0E8C4;                   /*här färg*/
+   /* background: #171618;*/
+=======
 	background: white;                   /*här färg*/
     border-style: solid;
     border-bottom: thick solid #5f5f5f; 
+>>>>>>> origin/master
 	font-size: 16px;
 	font-weight: bold;
 	color: #fff;
 	line-height: 40px;
+   
 
 
 	-moz-box-sizing: border-box;
