@@ -1,29 +1,137 @@
+.box {
+    margin-left: 90px;
+
+
+}
+
+.kontaktloggor
+{
+margin-top:-50px;
+float:left;
+
+
+}
+
+.kontakttitel
+{
+font-size:25px;
+margin-left:90px;
+margin-top:2px;
+    
+}
+
+
+
+
+.kontakttext
+{
+    font-size:16px;
+    margin-left:90px;
+    margin-top:2px;
+}
+
+
+
+
+
+
+
+
+.kontakttitel2
+{
+font-size:25px;
+margin-left:90px;
+margin-top:2px;
+}
+
+.kontaktloggor2
+{
+margin-top:-50px;
+float:left;
+
+}
+
+
+.kontakttext2
+{
+    font-size:16px;
+    margin-left:90px;
+    margin-top:2px;
+}
+
+
+
+
+
+
+
+
+.kontakttitel3
+{
+font-size:25px;
+margin-left:90px;
+margin-top:2px;
+}
+
+.kontaktloggor3
+{
+margin-top:-50px;
+float:left;
+
+}
+
+
+.kontakttext3
+{
+    font-size:16px;
+    margin-left:90px;
+    margin-top:2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.bowlingnummer
+{
+    font-size:18px;
+}
+
 html, body
 {
 	padding: 0;
 	margin: 0;
+    
 }
 body
 {
-	background-color: #fff;
+	background-color:white;
 	font-family: Arial, Helvetica, Verdana;
 	font-size: 14px;
 	line-height: 22px;
 	color: #777;
 	position: relative;
 	-webkit-text-size-adjust: none;
+    
 }
-body *
+body
 {
 	text-shadow: none;
 }
-h1, h2, h3, h4, h5, h6
+h1, h2,  h4, h5, h6
 {
 	line-height: 1;
 	font-weight: bold;
-	margin: 20px 0 10px 0;
+	margin: 0px 0 10px 0;
 }
-h1, h2, h3
+h1, h2, 
 {
 	font-size: 18px;
 }
@@ -34,6 +142,9 @@ h4, h5, h6
 p
 {
 	margin: 0 0 10px 0;
+    font-size:15px;
+    max-width: 100%;
+    color:black;
 }
 a, a:link, a:active, a:visited, a:hover
 {
@@ -54,7 +165,7 @@ nav:not(.mm-menu)
 
 .content
 {
-
+    
 text-align: left;
 color:black;
     
@@ -67,17 +178,19 @@ color:black;
 .header,
 .footer
 {
-	background: #E51214;
+	background: #597a9c;                   /*här färg*/
+   /* background: #171618;*/
 	font-size: 16px;
 	font-weight: bold;
 	color: #fff;
 	line-height: 40px;
+   
 
 
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;	
 	width: 100%;
-	height: 40px;
+	height: 50px;
 	padding: 0 50px;
 }
 .header.fixed
@@ -99,16 +212,37 @@ color:black;
 
 	display: block;
 	width: 40px;
-	height: 40px;
+	height: 50px;
 	position: absolute;
 	top: 0;
 	left: 10px;
 }
 .content
 {
-	padding: 0px 50px 50px 10px;
+	padding: 0px 10px 50px 10px;
 }
 
 img {
     max-width: 100%;
+}
+.image {
+    float: left; 
+    margin-right: 7px;
+    padding-top:2%;
+}
+
+.bowling{
+    padding-top:2%;
+    width:100%;
+}
+
+h2 {
+    padding-top:2%;
+}
+
+.biotext {
+    max-width: 100%;
+    margin-top:0%;
+    text-align: center;
+
 }

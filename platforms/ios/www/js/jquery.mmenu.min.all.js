@@ -134,9 +134,101 @@ function(n){var a="mmenu",t="navbars",e="title";n[a].addons[t][e]=function(e,r){
 
 
 
+
+
+
+
+onDeviceReady = function(){
+    
+    var push = PushNotification.init({
+        "android": {
+            "senderID": "219096860116"
+            
+        },
+        "ios": {"alert": "true", "badge": "false", "sound": "true"}
+    });
+    
+  //  alert(push);
+    
+    push.on('registration', function(data) {
+        
+        url = 'http://pushserver.linusanderas.se/reg.php?appId=1&platform=' +
+            device.platform + '&regId=' + data.registrationId;
+        
+        
+//        alert(url);
+        
+        $.get(url, function(data){});
+        
+    });
+    
+};
+
+document.addEventListener('deviceready', onDeviceReady, false);
+
 $( document ).ready(function() {    
   
    switcher("#Evenemang");
+    
+    
+    
+    url = 'http://www.kulturhuset.com/ny2016/index.php/evenemang/feed/rss/evenemang?format=feed';
+    
+    $("#Evenemang").html(localStorage.getItem("rss_evenemang"));
+    
+        $.get(url, function(data){
+            
+            var retval = "";
+            
+            $(data).find('item').each(function(){
+            
+                    var title = $(this).find("title").text();
+                    var pubDate = $(this).find("pubDate").text();
+                    var description = $(this).find("description").text();
+
+                    retval = retval + '<b>' + title + '</b><br />'
+                    retval = retval + '<i>' + pubDate + '</i><br />';
+                    retval = retval + description + '<hr />';
+            });
+            
+                if (retval != "")
+                {
+                    localStorage.setItem("rss_evenemang", retval);
+                    $("#Evenemang").html(retval);
+                }
+        });
+    
+    
+    
+    
+     url = 'http://www.kulturhuset.com/ny2016/index.php/bio/feed/rss/bio?format=feed';
+    
+    $("#Bio").html(localStorage.getItem("rss_bio"));
+    
+        $.get(url, function(data){
+            
+            var retval = "";
+            
+            $(data).find('item').each(function(){
+            
+                    var title = $(this).find("title").text();
+                    var pubDate = $(this).find("pubDate").text();
+                    var description = $(this).find("description").text();
+
+                    retval = retval + '<b>' + title + '</b><br />'
+                    retval = retval + '<i>' + pubDate + '</i><br />';
+                    retval = retval + description + '<hr />';
+            });
+            
+                if (retval != "")
+                {
+                    localStorage.setItem("rss_bio", retval);
+                    $("#Bio").html(retval);
+                }
+        });
+    
+    
+    
     
     
 });
@@ -153,6 +245,3 @@ function switcher(sida){
     
     
 }
-
-
-
